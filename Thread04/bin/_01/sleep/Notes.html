@@ -1,0 +1,25 @@
+sleep:
+java.lang.Thread sinifinda overloaded 2 tane sleep metodu yer almaktadir.
+
+public static native void sleep(long millis) throws InterruptedException;
+public static void sleep(long millis, int nanos)
+Burada dikkat edilecek nokta;
+
+sleep metodu static bir metottur.
+sleep metodu checked bir exception olan InterruptedException firlatabilir. Dolayisiyla bu metodu cagirdigimiz yerde handle or declare kuralina uymamiz gereklidir.
+Birinci metot native bir metottur ve long tipinde parametre almaktadir. sleep native metodu JVM tarafindan uygulanir.
+1 saniye 1000 milisaniyedir.
+Ikinci metot long tipinde ve int tipinde parametre almaktadir. Bu metotta milisaniye+nanosaniye olarak uyuma/sleep suresi belirlenir. 1 milisaniye 1000000(10^6) nanosaniyedir. 
+Ikinci metot birinci sleep metodunu cagirir.
+
+
+
+Thread.sleep metodu , hali hazirda calisan Thread’i, arguman olarak verilen belirtilmis sure kadar askiya alir(suspend)/uyutur.
+
+sleep metodunda belirtilmis sure bittiginde , tekrar calismaya devam edeceginin bir garantisi yoktur. Bu sure bittiginde uyutulmus thread, timed_waiting durumundan runnable
+ durumuna gecer. Thread Scheduler tarafindan calistirilmak icin tekrar uygun hale gelir(eligible).
+
+Dolayisiyla “minimum” , arguman olarak verilen sure kadar ilgili thread calismayacaktir.
+
+Unutmayalim; sleep metodu static metottur. t , Thread tipinde bir referans degisken olsun. t referans degiskeni uzerinden sleep metodunu cagirmak bu thread’i sleep durumuna gecirmez ! 
+sleep metodu cagrildigi noktada hali hazirda calisan thread’i sleep durumuna gecirir!

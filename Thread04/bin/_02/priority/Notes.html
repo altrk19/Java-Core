@@ -1,0 +1,8 @@
+JVM , preemptive(sonsuz oncelikli), priority-based bir schedule algoritmaya sahiptir. Bu JVMlerde time-slicing(zaman dilimi) scheduler yaklasimini uygulanir.
+
+Bununla birlikte tum JVM’lerde time-slicing yaklasimi uygulanmak zorunda degildir. JVM spesifikasyonu time-slicing scheduler uygulanmasini sart kosmaz.
+
+Bir cok JVM icin threadlerin priority degeri onemlidir. Birden fazla thread runnable durumundaysa yuksek oncelige(priority) sahip thread running durumuna gecirilmek icin tercih edilebilir.
+
+Bununla birlikte , bu durumun bir garantisi yoktur.
+Priority degerleri daha etkili/verimli program olmasi acisindan kullanilabilir fakat oncelik siralamasi garanti bir sekilde calismayacaktir.

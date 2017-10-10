@@ -1,0 +1,12 @@
+join metodu , bir thread bitene kadar(run metodu sonlana kadar) diger thread lerin beklemesini saglar.
+
+sleep ve yield metotlarinin aksine join metodu non-static bir metotdur.
+join metodu InterruptedException firlatabilir.
+3 tane overloaded versiyonu vardir.
+   public final void join() throws InterruptedException 
+   public final synchronized void join(long millis)
+   public final synchronized void join(long millis, int nanos)
+1.metot islem bitene kadar bekleyecektir. 2.metot verilen sure(milisaniye) kadar bekleyecektir. 3.metot da verilen sure(milisaniye+nanosaniye) kadar bekleyecektir.
+
+thread1.join();
+join() metodu cagrildiginda, hali hazirda calisan thread(currenct thread) , thread1 thread’i islemini bitirene kadar bekleyecektir(wait).
