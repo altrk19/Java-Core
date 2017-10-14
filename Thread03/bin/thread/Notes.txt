@@ -1,0 +1,92 @@
+Thread段n durumundan/state bahsedelim. java.lang.Thread sinifinda State isminde bir enum yer almaktadir. Bu enumda su degerler mevcuttur.
+
+public class Thread implements Runnable {
+  public enum State {
+
+        NEW,
+
+        RUNNABLE,
+
+        BLOCKED,
+
+        WAITING,
+
+        TIMED_WAITING,
+
+        TERMINATED;
+    }
+
+}
+NEW
+Thread objesi/instance olusturuldugu fakat start metodunun henuz cagrilmadigi durumda thread段n durumu NEW 租ir.
+Bu durumda Thread objesi mevcuttur ve live durumundadir fakat thread calismaya baslamadigi icin not-alive durumdadir.
+
+RUNNABLE
+Thread , RUNNABLE durumuna ilk olarak start() metodu cagrildigi zaman girer, bununla birlikte blocked/waitigin/sleeping durumlarindan tekrar RUNNABLE duruma donebilir.
+Thread , RUNNABLE durumunda alive durumdadir.
+RUNNABLE durumu , thread段n calismaya(running duruma gecme) uygun/eligible oldugu durumdur.
+
+RUNNING
+Thread Scheduler ,thread pool/havuzundan runnable durumdaki(state) bir thread段 secer ve bu thread calismaya baslar(running).
+RUNNING durumu asil action段n oldugu durumdur. RUNNING durumundan tekrar RUNNABLE duruma donus ya da waiting/blocking/sleeping durumlarina donus soz konusudur.
+
+Burada onemli nokta Thread.State enum段nda RUNNING degeri yoktur. Burada RUNNING durumundan kasit hali hazirda Thread Scheduler tarafindan secilen RUNNABLE thread稚ir.
+
+WAITING
+WAITING state , thread段n calismaya uygun/eligible olmadigi bir durumdur. Thread bu durumda alive durumdadir fakat Thread Scheduler tarafindan secilmek icin uygun 
+degildir(not eligible). Sadece runnable durumunda olan bir thread running durumu icin uygun olabilir (eligible)
+
+WAITING durumunun anlami bir thread diger bir thread段n belirli bir isi yapmasini bekliyor demektir.
+
+Bir Thread段n durumu su durumlarda WAITING olabilir.
+
+java.lang.Object
+
+public final native void wait() throws InterruptedException;
+Bir thread , bir obje uzerinden wait metodunu cagirdiginda WAITING state弾 gecer. Bir thread WAITING duruma gectiginde bir baska thread段n ilgili obje uzerinden 
+notify() ya da notifyAll() metodunu cagirmasi ile WAITING durumu sonlanir ve  RUNNABLE duruma gecilir.
+
+java.lang.Thread
+
+public final void join() throws InterruptedException
+join metodu , bir thread bitene kadar(run metodu sonlana kadar) diger thread lerin beklemesini saglar.
+
+join metodu cagrildiginda, hali hazirda calisan thread(currenct thread) , thread1 thread段 islemini bitirene kadar bekleyecektir(wait).
+
+thread1.join();
+TIMED_WAITING
+TIMED_WAITING durumu da thread段n calismaya uygun/eligible olmadigi durumlardir. Thread bu durumda alive durumdadir fakat Thread Scheduler tarafindan secilmek icin uygun degildir.
+
+join ve wait metotlarinin overloaded halleri mevcuttur. Overloaded metotlarinda belirli bir timeout suresi kullanilabilir. Bu durumda TIMED_WAITING durumu soz konusu olacaktir.
+
+java.lang.Object
+
+    public final native void wait(long timeout) throws InterruptedException;
+Bir thread , bir obje uzerinden wait(long timeout) metodunu cagirdiginda TIMED_WAITING state弾 gecer. Bir thread TIMED_WAITING duruma gectiginde bir baska thread段n 
+ilgili obje uzerinden notify() ya da notifyAll() metodunu cagirmasi ya da timeout ile WAITING durumu sonlanir ve  RUNNABLE duruma gecilir.
+
+java.lang.Thread
+
+public final synchronized void join(long millis) throws InterruptedException
+join metodu , bir thread段n diger thread islemini bitirene kadar beklemesini saglar fakat burada oldugu gibi parametre alan overloaded join metodu thread段n belirtilen 
+timeout suresi kadar beklemesini saglar.
+
+java.lang.Thread
+
+public static native void sleep(long millis) throws InterruptedException;
+Bir thread , SLEEPING durumunda olabilir. sleep metodu static bir metottur , cagrildigi noktada hali hazirda calisan thread段 milisaniye cinsinden sleeping durumuna girmesini saglar.
+
+Burada onemli nokta uyuma suresi bittiginde tekrar calismaya devam edeceginin bir garantisi yoktur !
+
+Ilgili Thread sleeping durumundan sonra tekrar RUNNABLE duruma gecer.Bu durumda ne zaman Thread Scheduler tarafindan secilirse tekrar RUNNING durumuna gececektir.
+
+SLEEPING durumu da ayri bir enum degeri yoktur. Daha ozel isim olarak SLEEPING kavrami kullanilmaktadir. Yoksa sleep metodu , ilgili thread icin TIMED_WAITING durumuna 
+sahip olmasina neden olur.
+
+BLOCKED
+snychronized bir block誕 ya da metoda ayni anda sadece bir thread girebilir. Ilgili objenin kilidine (object lock) hangi thread sahipse o tread  isini bitirene kadar bir 
+baska thread synchronizded metoda ya da block誕 giris yapamaz. Burada oldugu gibi diger threadlerin obje kildi icin bekledigi duruma BLOCKED durumu denilir.
+
+TERMINATED
+Thread calismasini sonlandirdiginda yani run metodu sonlandiginda DEAD yani TERMINATED duruma gecer.
+TERMINATED duruma gecen bir thread tekrar RUNNABLE duruma gecemez.
