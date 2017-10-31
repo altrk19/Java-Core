@@ -1,0 +1,4 @@
+Dosyamýzý yazacak sýnýf tipinden bir data alaný oluþturacagýz
+Dosyamýzý açma,ekleme,kapama metotlarýný olusturcagýz
+Ýstisnai durumlarý inceleyecegiz.
+Sýnýfýmýzý main den çagýrýp çalýstýracagýz.
