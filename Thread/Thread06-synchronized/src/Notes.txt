@@ -1,0 +1,20 @@
+
+Race Condition durumunu cozmek icin increment ve decrement metotlarini synchronized yapabiliriz.
+
+syncronized
+
+synchronized block ya da metot , race condition durumundan kacinmamizi saglar. Java’da syncronized anahtar kelimesi metotlar ve block’larla birlikte kullanilabilir.
+
+Java’da synchronization mekanizmasi Lock(kilit) kavrami ile calisir. Java’da her objenin bir yerlesik/dahili/built-in kilidi(Lock) vardir. Bu kilide intrinsic(esas/asil) lock veya monitor lock denilir.
+
+syncronized instance metota giren bir Thread, ilgili sinifin hali hazirdaki objesinin kilidini(lock) alir. Ilgili sinifin hali hazirdaki objesinden kasit ; “this” tir. Hatirlayacagimiz gibi instance metotlar objeye aittir ve this anahtar kelimesi hali hazirdaki mevcut objeye referansta bulunur.
+
+Her obje icin sadece bir tek kilit/lock(intrinsic Lock) vardir. Bir thread ilgili objenin kilidini ele gecirir ve birakana kadar(release) baska bir thread bu kilidi ele geciremez. Bunun anlami syncronized bir metota giren bir thread ilgili objenin kilidini ele gecirir. Bir baska thread bu syncronized metota , kilidi elinde bulunduran thread’in syncronized metotta calismasi sonlana kadar giremez.
+
+Sadece metotlar ve blocklar synchronized olabilir degiskenler ya da siniflar synchronized olamazlar.
+
+Her objenin bir tek kilidi(Lock) vardir.
+Bir thread birden fazla kilide(Lock) sahip olabilir. Ornegin; bir thread syncronized bir metoda girer ve ilgili this objesinin kilidine sahip olur.
+Bu syncronized metottan farkli bir obje referansi uzerinden syncronized bir metot cagirir bu durumda yine ilgili this objesinin kilidine sahip olur.
+
+Bir siniftaki tum metotlar synchronized tanimlanmak zorunda degildir. Bir sinif hem synchronized hem de non-synchronized metotlara sahip olabilir.
