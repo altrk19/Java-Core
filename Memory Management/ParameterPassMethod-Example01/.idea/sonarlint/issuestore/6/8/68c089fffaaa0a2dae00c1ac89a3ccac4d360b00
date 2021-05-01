@@ -1,0 +1,7 @@
+
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Έ»ΊΌ8•ρ±γε.
+e
+java:S1226"CIntroduce a new variable instead of reusing the parameter "person".(Ζξτύÿÿÿÿ8•ρ±γε.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ΧΎάωÿÿÿÿ8•ρ±γε.
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ι‰Δλ
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ΚΉΖϊ8αΦ­γε.

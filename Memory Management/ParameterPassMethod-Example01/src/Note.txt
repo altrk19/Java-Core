@@ -1,0 +1,2 @@
+Java uses pass-by-value, which means that calls to methods create a copy of the parameters.
+Assigning new values to those parameters in the method doesn’t affect the caller’s variables.

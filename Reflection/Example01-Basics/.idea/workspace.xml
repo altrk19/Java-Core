@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="889e7202-355b-43b8-a7a4-fc1250563737" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ojrS38VoV6Buuv8hz46vkg4T3V" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="reflect" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main05_Annotations">
+    <configuration name="Main01_Class" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="reflect._01_class.Main01_Class" />
+      <module name="Example01-Basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="reflect._01_class.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main02_Constructor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="reflect._02_constructor.Main02_Constructor" />
+      <module name="Example01-Basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="reflect.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main03_Fields" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="reflect._03_field.Main03_Fields" />
+      <module name="Example01-Basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="reflect.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main04_Method" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="reflect._04_method.Main04_Method" />
+      <module name="Example01-Basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="reflect._04_method.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main05_Annotations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="reflect._05_annotations.Main05_Annotations" />
+      <module name="Example01-Basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="reflect._05_annotations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main05_Annotations" />
+        <item itemvalue="Application.Main04_Method" />
+        <item itemvalue="Application.Main03_Fields" />
+        <item itemvalue="Application.Main02_Constructor" />
+        <item itemvalue="Application.Main01_Class" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="889e7202-355b-43b8-a7a4-fc1250563737" name="Default Changelist" comment="" />
+      <created>1613810836572</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613810836572</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1245" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1613832626598">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1245" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1613832626598" />
+    <state x="991" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1613835652986">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="991" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613835652986" />
+    <state width="401" height="466" key="DebuggerActiveHint" timestamp="1613822733730">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="401" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1613822733730" />
+    <state width="914" height="531" key="GridCell.Tab.0.bottom" timestamp="1613843278685">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="531" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613843278685" />
+    <state width="914" height="531" key="GridCell.Tab.0.center" timestamp="1613843278685">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="531" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613843278685" />
+    <state width="914" height="531" key="GridCell.Tab.0.left" timestamp="1613843278685">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="531" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613843278685" />
+    <state width="914" height="531" key="GridCell.Tab.0.right" timestamp="1613843278685">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="531" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613843278685" />
+    <state width="914" height="531" key="GridCell.Tab.1.bottom" timestamp="1613843278685">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="531" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613843278685" />
+    <state width="914" height="531" key="GridCell.Tab.1.center" timestamp="1613843278685">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="531" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613843278685" />
+    <state width="914" height="531" key="GridCell.Tab.1.left" timestamp="1613843278685">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="531" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613843278685" />
+    <state width="914" height="531" key="GridCell.Tab.1.right" timestamp="1613843278685">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="531" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613843278685" />
+    <state x="531" y="262" key="com.intellij.ide.util.TipDialog" timestamp="1613975682809">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="531" y="262" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613975682809" />
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1613824518622">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1613824518622" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/reflect/_03_field/Main03_Fields.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

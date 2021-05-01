@@ -1,0 +1,7 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(íæ¹«ıÿÿÿÿ8ŒÛ”àå.
+e
+java:S1226"CIntroduce a new variable instead of reusing the parameter "number".(ˆ¥ÔÏøÿÿÿÿ8ø’àå.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ó…ÿÆûÿÿÿÿ8ø’àå.
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(áÖƒŠùÿÿÿÿ
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ªèğü8’­–àå.

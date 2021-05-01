@@ -1,0 +1,23 @@
+
+T	java:S106v"9Replace this use of System.out or System.err by a logger.(íË¬K8 ¸ëü.
+T	java:S106,"9Replace this use of System.out or System.err by a logger.(íË¬K8â¨û€ü.
+T	java:S106b"9Replace this use of System.out or System.err by a logger.(íË¬K8„ŠÏü.
+Z	java:S106;"9Replace this use of System.out or System.err by a logger.(–ãÖƒûÿÿÿÿ8Ïïü.
+U	java:S106u"9Replace this use of System.out or System.err by a logger.(À—›Ş8 ¸ëü.
+Z	java:S106w"9Replace this use of System.out or System.err by a logger.(–ãÖƒûÿÿÿÿ8 ¸ëü.
+T	java:S106 "9Replace this use of System.out or System.err by a logger.(íË¬K8ñÌô€ü.
+Z	java:S106-"9Replace this use of System.out or System.err by a logger.(–ãÖƒûÿÿÿÿ8â¨û€ü.
+e
+java:S1192 "IDefine a constant instead of duplicating this literal "weight: " 6 times.(íË¬K8¿àŸü.
+k
+java:S1192!"IDefine a constant instead of duplicating this literal "height: " 7 times.(–ãÖƒûÿÿÿÿ8¿àŸü.
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(–ãÖƒûÿÿÿÿ8ñÌô€ü.
+T	java:S106:"9Replace this use of System.out or System.err by a logger.(íË¬K8Ïïü.
+T	java:S106U"9Replace this use of System.out or System.err by a logger.(íË¬K8¨œ¼ü.
+L
+java:S3740p"/Provide the parametrized type for this generic.(ìŠ”š8 ¸ëü.
+T	java:S106H"9Replace this use of System.out or System.err by a logger.(íË¬K8ÑÖ¡ü.
+b	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(íø×—
+Z	java:S106c"9Replace this use of System.out or System.err by a logger.(–ãÖƒûÿÿÿÿ8ó»Íü.
+Z	java:S106I"9Replace this use of System.out or System.err by a logger.(–ãÖƒûÿÿÿÿ8ÑÖ¡ü.
+Z	java:S106V"9Replace this use of System.out or System.err by a logger.(–ãÖƒûÿÿÿÿ8¨œ¼ü.
